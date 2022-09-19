@@ -1,0 +1,84 @@
+# Site Information
+site_name: Freenalytics
+site_description: An open source, self-hosted dashboard for usage analytics of general use applications.
+site_author: Freenalytics
+site_url: https://freenalytics.github.io
+
+# Repo
+repo_name: freenalytics/freenalytics
+repo_url: https://github.com/freenalytics/freenalytics
+edit_uri: ''
+
+# Extra
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/freenalytics
+      name: Freenalytics on GitHub
+  
+# Copyright
+copyright: Copyright &copy; 2022 Freenalytics
+
+# Theme Customization
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: deep orange
+      accent: blue
+      media: "(prefers-color-scheme: light)"
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep orange
+      accent: blue
+      media: "(prefers-color-scheme: dark)"
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    repo: fontawesome/brands/git-alt
+    logo: fontawesome/solid/chart-line
+  language: en
+  direction: ltr
+  favicon: assets/logo.png
+  features:
+    - navigation.top
+    - navigation.tabs
+    - navigation.tracking
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:pymdownx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.mark
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.betterem
+  - pymdownx.highlight
+  - pymdownx.superfences
+
+# Plugins
+plugins:
+  - search
+  - minify:
+      minify_html: true
+  - git-revision-date-localized:
+      type: date
+
+# Navigation
+nav:
+  - Home: index.md
