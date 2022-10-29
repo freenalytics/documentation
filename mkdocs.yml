@@ -82,3 +82,24 @@ plugins:
 # Navigation
 nav:
   - Home: index.md
+  - Getting Started:
+    - Introduction: getting-started/index.md
+    - Hosting with Docker: getting-started/docker-hosting.md
+    - Hosting with Node.js: getting-started/node-hosting.md
+    - Creating your First Application: getting-started/creating-your-first-application.md
+    - Uploading Data: getting-started/uploading-data.md
+    - Exporting Data: getting-started/exporting-data.md
+  - Reference:
+    - Introduction: reference/index.md
+    - Application: reference/application.md
+    - Schema: reference/schema.md
+    - Connector: reference/connector.md
+    - Data Entries: reference/data-entries.md
+    - API Reference: https://freenalytics.github.io/api-docs/
+  - Official Templates:
+    - Introduction: official-templates/index.md
+    - Official Web Template: official-templates/web-template.md
+  - Development:
+    - Introduction: development/index.md
+    - Web Dashboard: development/web-dashboard.md
+    - Server: development/server.md
