@@ -15,6 +15,18 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/freenalytics
       name: Freenalytics on GitHub
+    - icon: fontawesome/brands/docker
+      link: https://github.com/freenalytics/freenalytics/pkgs/container/freenalytics
+      name: Docker Image
+    - icon: fontawesome/solid/code
+      link: https://freenalytics.github.io/api-docs/
+      name: API Reference
+    - icon: fontawesome/brands/trello
+      link: https://trello.com/b/oDg8aD7n
+      name: Trello Board
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/moonstar_x99
+      name: Twitter Profile
   
 # Copyright
 copyright: Copyright &copy; 2022 Freenalytics
