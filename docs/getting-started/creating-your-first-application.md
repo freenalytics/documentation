@@ -15,6 +15,12 @@ any incoming data entry. Schemas should be of type `object` at the top level and
 
 In the case that the structure contains data that is independent from each other you should probably not set those properties as required.
 
+!!! warning "Keep in Mind"
+        Schemas cannot be updated. If you need to change the schema of the application you will need to create a new application with the new schema.
+
+        This limitation comes from the fact that the schema defines the structure of the data and how it is visualized. If this changes, fields that are
+        removed may no longer be visualized even though data still exists for those fields.
+
 ## Example Above
 
 In the example above, the following schema is used:
