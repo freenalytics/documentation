@@ -1,2 +1,5 @@
-!!! info
-    Under construction. If you wish to track this project's progress check out the [Trello board](https://trello.com/b/oDg8aD7n).
+# Reference
+
+This section contains some reference information regarding the entities that compose this application.
+
+If you wish to interact with the platform programmatically through the API, check the [API Reference](https://freenalytics.github.io/api-docs/).
