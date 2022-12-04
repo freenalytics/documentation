@@ -76,8 +76,8 @@ Once set, the connector will send the relevant information from the client visit
 
 ## Example Application
 
-An example application that uses this library has been built as an illustration. For more information, check out the [web example](../examples/web-example.md) section.
+An example application that uses this library has been built as an illustration. For more information, check out the [Webpage example](../examples/webpage-example.md) section.
 
 ## Development
 
-If you're interested in developing this library, head over to the [web connector](../development/connectors/freenalytics-connector-web.md) development guide.
+If you're interested in developing this library, head over to the [Web connector](../development/connectors/freenalytics-connector-web.md) development guide.

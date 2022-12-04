@@ -114,7 +114,7 @@ nav:
     - Official Web Template: official-templates/web-template.md
   - Examples:
     - Introduction: examples/index.md
-    - Web Example: examples/web-example.md
+    - Webpage Example: examples/webpage-example.md
   - Development:
     - Introduction: development/index.md
     - Web Dashboard: development/web-dashboard.md

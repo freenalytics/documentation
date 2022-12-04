@@ -1,6 +1,6 @@
 # Development
 
-This sections contains some information regarding the development process of this project.
+This section contains some information regarding the development process of this project.
 
 If you wish to contribute to the development of Freenalytics, check out the following pages:
 
