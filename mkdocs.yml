@@ -120,7 +120,7 @@ nav:
     - Introduction: development/index.md
     - Web Dashboard: development/web-dashboard.md
     - Server: development/server.md
-    - Connectors:
+    - Connector Development:
       - Introduction: development/connectors/index.md
-      - freenalytics-connector-web: development/connectors/freenalytics-connector-web.md
       - Custom Connector: development/connectors/custom-connector.md
+      - freenalytics-connector-web: development/connectors/freenalytics-connector-web.md
