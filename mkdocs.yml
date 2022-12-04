@@ -118,8 +118,8 @@ nav:
     - Discord Bot Example: examples/discord-bot-example.md
   - Development:
     - Introduction: development/index.md
-    - Web Dashboard: development/web-dashboard.md
     - Server: development/server.md
+    - Web Dashboard: development/web-dashboard.md
     - Connector Development:
       - Introduction: development/connectors/index.md
       - Custom Connector: development/connectors/custom-connector.md
