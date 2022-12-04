@@ -115,6 +115,7 @@ nav:
   - Examples:
     - Introduction: examples/index.md
     - Webpage Example: examples/webpage-example.md
+    - Discord Bot Example: examples/discord-bot-example.md
   - Development:
     - Introduction: development/index.md
     - Web Dashboard: development/web-dashboard.md
