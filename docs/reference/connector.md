@@ -6,7 +6,7 @@ The idea behind this entity is to allow applications that share commonly used sc
 the library that the developer can use to integrate with the platform directly instead of having to manually implement
 the client themselves.
 
-An application can have any number of connectors and a connector is compose of 2 things:
+An application can have any number of connectors and a connector is composed of 2 things:
 
 * `language`: The language of the connector library.
 * `package_url`: The URL of the connector library to download.

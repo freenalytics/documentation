@@ -123,3 +123,4 @@ nav:
     - Connectors:
       - Introduction: development/connectors/index.md
       - freenalytics-connector-web: development/connectors/freenalytics-connector-web.md
+      - Custom Connector: development/connectors/custom-connector.md
