@@ -328,3 +328,95 @@ Your route data file should export an object of type `RouteData` which includes 
 
 !!! note
         If your route has `tokenRequired` set to true, you need to add a `UnauthorizedError` instance inside `throws`.
+
+### Example Documentation
+
+Here we'll use the same example as used above, for the route that handles data upload.
+
+#### Schema
+
+The relevant schemas are as following:
+
+```ts
+// documentation/schemas/application.ts
+export const ApplicationDataRequestSchema = Joi.object({
+  example: Joi.string().required()
+});
+
+export const ApplicationDataResponseSchema = Joi.object({
+  domain: Joi.string().required(),
+  payload: ApplicationDataRequestSchema
+});
+```
+
+In this case, the `example` is really only an example. Since data can come in any shape or form, an example body was necessary.
+
+#### RouteData File
+
+The file with the information of this route will then be:
+
+```ts
+// documentation/routes/applications/createApplicationData.ts
+import HttpStatus from 'http-status-codes';
+import { RouteData } from '../../types';
+import { UnauthorizedRequestError, SchemaValidationError, ResourceNotFoundError } from '../../../src/errors/http';
+
+const data: RouteData = {
+  path: '/applications/:domain/data',
+  method: 'post',
+  summary: 'Create a new data entry for an application for the requesting user.',
+  description: `Create a new data entry for an application for the requesting user.
+  The shape of the request body will depend on the schema that was used to create the application.`,
+  throws: [
+    new UnauthorizedRequestError(),
+    new SchemaValidationError(''),
+    new ResourceNotFoundError('')
+  ],
+  success: {
+    code: HttpStatus.CREATED,
+    schema: 'ApplicationDataResponseSchema'
+  },
+  pathParams: [
+    {
+      name: 'domain',
+      description: 'The domain of the application to upload the data to.',
+      type: 'string'
+    }
+  ],
+  bodySchema: 'ApplicationDataRequestSchema',
+  tokenRequired: true
+};
+
+export default data;
+```
+
+#### Including the RouteData File
+
+Finally, we need to include this route data file into the `documentation/documentation.ts` file. Just import this file and add it into the exported object.
+
+```ts
+// documentation/documentation.ts
+import createApplicationData from './routes/applications/createApplicationData';
+
+const documentationData = {
+  metadata,
+  info,
+  paths: {
+    Application: {
+      getAllApplicationsForUser,
+      createApplicationForUser,
+      getApplicationByDomain,
+      updateApplicationByDomain,
+      deleteApplicationByDomain,
+
+      createApplicationData,
+      getApplicationData,
+      getApplicationDataAsCsv
+    }
+  }
+};
+
+export default documentationData;
+```
+
+The rest of the file was omitted as it is not relevant. Here you can see that `createApplicationData` is exported near the end of the `paths.Application` object.
