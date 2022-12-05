@@ -70,6 +70,8 @@ theme:
 markdown_extensions:
   - admonition
   - meta
+  - attr_list
+  - md_in_html
   - toc:
       permalink: true
   - pymdownx.emoji:
