@@ -70,6 +70,8 @@ theme:
 markdown_extensions:
   - admonition
   - meta
+  - attr_list
+  - md_in_html
   - toc:
       permalink: true
   - pymdownx.emoji:
@@ -87,6 +89,7 @@ markdown_extensions:
 # Plugins
 plugins:
   - search
+  - glightbox
   - minify:
       minify_html: true
   - git-revision-date-localized:
@@ -112,7 +115,15 @@ nav:
   - Official Templates:
     - Introduction: official-templates/index.md
     - Official Web Template: official-templates/web-template.md
+  - Examples:
+    - Introduction: examples/index.md
+    - Webpage Example: examples/webpage-example.md
+    - Discord Bot Example: examples/discord-bot-example.md
   - Development:
     - Introduction: development/index.md
-    - Web Dashboard: development/web-dashboard.md
     - Server: development/server.md
+    - Web Dashboard: development/web-dashboard.md
+    - Connector Development:
+      - Introduction: development/connectors/index.md
+      - Custom Connector: development/connectors/custom-connector.md
+      - freenalytics-connector-web: development/connectors/freenalytics-connector-web.md
