@@ -31,10 +31,8 @@ In case you're curious, here's the implementation of the client that communicate
 
 <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Ffreenalytics%2Fexample-discord-bot%2Fblob%2Fmaster%2Fsrc%2Fthird-party%2Ffreenalytics%2FFreenalyticsClient.js&style=github-gist&showBorder=on&showLineNumbers=on&showFileMeta=on&showCopy=on&fetchFromJsDelivr=on"></script>
 
-## Graph Screenshots
+## Dashboard Screenshot
 
-Some graphs that you can expect to see include:
+The Dashboard that you can expect to see is:
 
-![graphs-1](../assets/examples/discord-bot-example/graphs-1.png)
-![graphs-2](../assets/examples/discord-bot-example/graphs-2.png)
-![graphs-3](../assets/examples/discord-bot-example/graphs-3.png)
+![dashboard](../assets/home/discord_example.png)
