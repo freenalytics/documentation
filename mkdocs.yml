@@ -121,7 +121,7 @@ nav:
     - Discord Bot Example: examples/discord-bot-example.md
   - Data Treatment:
     - Introduction: data-treatment/index.md
-    - Page Clicks View: data-treatment/page-click-views.md
+    - Page Clicks View: data-treatment/page-clicks-view.md
   - Development:
     - Introduction: development/index.md
     - Server: development/server.md
