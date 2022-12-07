@@ -6,6 +6,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://freenalytics.github.io/data-treatment/</loc>
+         <lastmod>2022-12-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://freenalytics.github.io/data-treatment/page-clicks-view/</loc>
+         <lastmod>2022-12-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://freenalytics.github.io/development/</loc>
          <lastmod>2022-12-07</lastmod>
          <changefreq>daily</changefreq>
